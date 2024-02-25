@@ -1,0 +1,8 @@
+services:
+  server:
+    image: nest-server
+    build:
+      context: ./server
+      dockerfile: ../Dockerfile.server
+    ports:
+      - "3000:3000"
